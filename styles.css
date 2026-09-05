@@ -112,7 +112,8 @@ body {
   height: 100vh;
   margin: 0;
   font-family: var(--font-family-ui);
-  background-color: #008080;
+  background-image: url(assets/BASE64_WALLPAPER.png);
+  background-size: cover;
   color: var(--color-text);
   overflow: hidden;
   image-rendering: pixelated;
@@ -244,12 +245,6 @@ img {
   bottom: var(--taskbar-height);
   padding: var(--space-xl);
   overflow: hidden;
-  background-image: url(assets/BASE64_WALLPAPER.png);
-  image-rendering: -moz-crisp-edges;
-  image-rendering: pixelated;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   transform: scale(1);
   height: calc(100vh - var(--menubar-height) - var(--taskbar-height));
 }
@@ -1163,13 +1158,6 @@ body {
 
 .icon {
   transition: transform var(--transition-fast), background-color var(--transition-fast);
-}
-
-.icons {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-  /* Responsive grid */
-  gap: var(--space-lg);
 }
 
 /* High DPI/Retina Displays */
